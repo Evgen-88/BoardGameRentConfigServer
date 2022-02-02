@@ -12,7 +12,7 @@ spring:
           enabled: false
   security:
     user:
-      name: evgen
-      password: evgen
+      name: ${user_name}
+      password: ${password}
 encrypt:
-  key: 0ver5ecretpa55w0rd
+  key: ${secret}
