@@ -6,13 +6,13 @@ spring:
       server:
         git:
           default-label: master
-          uri: https://github.com/Evgen-88/ConfigStorage.git
+          uri: ${PROPERTY_PATH}
           clone-on-start: true
         encrypt:
           enabled: false
   security:
     user:
-      name: ${user_name}
-      password: ${password}
+      name: ${USER_NAME}
+      password: ${PASSWORD}
 encrypt:
-  key: ${secret}
+  key: ${SECRET}
